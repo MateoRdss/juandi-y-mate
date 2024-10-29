@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <div class="title">
+            <img src="images/logo.svg" alt="SPLITTER">
+        </div>
+        <div class="app">
+            <div class="bill">
+                <div>
+                    <p>Bill</p>
+                </div>
+                <div class="bill__input">
+                    <input type="number" class="bill__input-input">
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <p>Select tip %</p>
+                </div>
+                <div class="percentages">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="number" placeholder="Custom" class="no-arrows">
+                </div>
+            </div>
+            <div class="people">
+                <div>
+                        <p>Number of people</p>
+                </div>
+                <div class="people__input">
+                    <input type="number" class="people__input-input">
+                </div>
+            </div>
+            <div class="total-price">
+                <div class="total-price__tip-person">
+                    <div>
+                        <h3>Tip Amount</h3>
+                        <p class="person">/ person</p>
+                    </div>
+                    <div>
+                        <div class="price">
+                            <!--precio--> 5
+                        </div>
+                    </div>
+                </div>
+                <div class="total-price__price-person">
+                    <div>
+                        <h3>Total</h3>
+                        <p class="person">/ person</p>
+                    </div>
+                    <div class="price">
+                        <!--precio--> 4
+                    </div>
+                </div>
+                <div class="total-price__button">
+                    <button class="reset">
+                        RESET
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
