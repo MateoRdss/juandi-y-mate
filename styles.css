@@ -49,12 +49,21 @@ body{
     gap: 30px;
 }
 
+.app__top{
+    display: grid;
+    gap: 30px;
+}
 .total-price{
     display: grid;
     gap: 25px;
     border-radius: 15px;
     padding: 35px 25px 25px 25px;
     background-color: var(--clr-very-dark-cyan);
+}
+
+.total-price__prices{
+    display: grid;
+    gap: 25px;
 }
 
 h3{
@@ -86,13 +95,12 @@ font-size: 14px;
     font-size: 17px;
     color: var(--clr-very-dark-cyan);
     background-color: var(--clr-pr-bg-strong-cyan);
-    transition: 0.15s;
+    transition: background-color 0.15s, scale 0.1s;
     cursor: pointer;
 }
 
 .total-price__button :hover{
     background-color: var(--clr-light-grayish-cyan);
-    transition: 0.15s;
 }
 
 .person, .price{
@@ -114,7 +122,7 @@ font-size: 14px;
     border: none;
     color: var(--clr-white);
     padding: 10px 0;
-    transition: 0.15s;
+    transition: background-color 0.15s, scale 0.1s;
     border-radius: 7px;
     font-size:20px;
     font-weight: 600;
@@ -123,6 +131,7 @@ font-size: 14px;
 
 .percentages button:hover{
     background-color: var(--clr-pr-bg-strong-cyan);
+    color: var(--clr-very-dark-cyan);
 }
 
 .percentages input{
@@ -180,4 +189,59 @@ font-size: 14px;
 :is(.bill, .tip, .people) p{
     color: var(--clr-dark-grayish-cyan);
     font-weight: bolder;
+}
+
+button:active{
+    transform: scale(0.99);
+}
+
+@media (width>=1080px){
+    .app{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 960px;
+        border-radius: 20px;
+    }
+
+    body{
+        height: 100vh;
+        display: grid;
+        align-items: start;
+    }
+
+    main{
+        display: grid;
+        gap: 30px;
+        margin-block: 30px;
+    }
+
+    .total-price{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .app__top{
+        padding: 20px;
+    }
+
+    .price{
+        font-size: 55px;
+    }
+
+    .percentages{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+
+    .percentages button{
+        font-size: 25px;
+        padding: 5px 0px;
+    }
+
+    .bill__input-input, .people__input-input{
+        font-size: 23px;
+    }
 }

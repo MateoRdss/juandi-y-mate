@@ -15,54 +15,58 @@
             <img src="images/logo.svg" alt="SPLITTER">
         </div>
         <div class="app">
-            <div class="bill">
-                <div>
-                    <p>Bill</p>
+            <div class="app__top">
+                <div class="bill">
+                    <div>
+                        <p>Bill</p>
+                    </div>
+                    <div class="bill__input">
+                        <input type="number" class="bill__input-input">
+                    </div>
                 </div>
-                <div class="bill__input">
-                    <input type="number" class="bill__input-input">
+                <div class="tip">
+                    <div>
+                        <p>Select tip %</p>
+                    </div>
+                    <div class="percentages">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="number" placeholder="Custom" class="no-arrows">
+                    </div>
                 </div>
+                <div class="people">
+                    <div>
+                        <p>Cantidad de Personas</p>
+                    </div>
+                    <div class="people__input">
+                        <input type="number" class="people__input-input">
+                    </div>
             </div>
-            <div class="tip">
-                <div>
-                    <p>Select tip %</p>
-                </div>
-                <div class="percentages">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="number" placeholder="Custom" class="no-arrows">
-                </div>
-            </div>
-            <div class="people">
-                <div>
-                        <p>Number of people</p>
-                </div>
-                <div class="people__input">
-                    <input type="number" class="people__input-input">
-                </div>
             </div>
             <div class="total-price">
-                <div class="total-price__tip-person">
-                    <div>
-                        <h3>Tip Amount</h3>
-                        <p class="person">/ person</p>
-                    </div>
-                    <div>
-                        <div class="price">
-                            <!--precio--> 5
+                <div class="total-price__prices">
+                    <div class="total-price__tip-person">
+                        <div>
+                            <h3>Tip Amount</h3>
+                            <p class="person">/ person</p>
+                        </div>
+                        <div>
+                            <div class="price">
+                                <!--precio--> $4.29
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="total-price__price-person">
-                    <div>
-                        <h3>Total</h3>
-                        <p class="person">/ person</p>
-                    </div>
-                    <div class="price">
-                        <!--precio--> 4
+                    <div class="total-price__price-person">
+                        <div>
+                            <h3>Total</h3>
+                            <p class="person">/ person</p>
+                        </div>
+                        <div class="price">
+                            <!--precio--> $32.79
+                        </div>
                     </div>
                 </div>
                 <div class="total-price__button">
